@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Pong</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/phaser.min.js"></script>
+    <script src="js/game.js"></script>
+</head>
+
+<body>
+    <div id="gameDiv"> </div>
+</body>
+
+</html>
+<!--links
+http://www.zekechan.net/asteroids-html5-game-tutorial-1/    
+https://phaser.io/tutorials/making-your-first-phaser-game
+https://phaser.io/learn
+https://developer.mozilla.org/en-US/docs/Games/Tutorials/2D_breakout_game_Phaser
+https://www.youtube.com/watch?v=uxos1GG32Tg
+http://www.zekechan.net/asteroids-html5-game-tutorial-1/
+https://www.youtube.com/watch?v=U24QgbjoVkY
+https://tutorialzine.com/2015/06/making-your-first-html5-game-with-phaser
+https://loonride.com/learn/phaser/getting-started
+https://www.youtube.com/watch?v=pPvG1kgIVMU
+-->
+<!--python -m http.server -->
+<!-- 
+Took some time researching phaser, like the functions that come with it etc, also found games that were made using phaser,
+looked through alot of tutorials, I found that they all had the same idea which was to create the image, create variables that
+tie in with the image. Give the variables properties and to pass the variables through functions to make them move, then add
+them to the game world. Then to make sure that they fit in the game world dementions that you have created. 
+I did a tutorial on how to create a game. I chose the asteroid game because i thought it would be pretty beginner friendly since that games been
+around since the 90s. At first everything was pretty easy to understand. I created the gameProperties to create how big the screen
+would be for the game, or how big the dimentions of the game would be. Then i found pictures online to change up the graphics of
+the game since the images that it was using kind of seemed too 90s like just stick figures.
+This part was easy but time consuming since i had to find pictures, convert them, see how they would look on screen. Make
+the game boundaries bigger so that i could fit in bigger images because if it was too small the images would be to blurry to 
+really see what they were. Then after i found images of which i think would work well with the game I used gimp to make the images 
+smaller. I chose a pictureof a round ship with 3 sides to be the picture of my "asteroids" because i new that they would have to 
+spin like asteroids. Then i created the largest image of the enemy ship, a medium picture and a small picture so that when game 
+was "finished" and i could shoot, they would split into the smaller pictures through a function. Then 
+created the properties of the user ship.I learned alot of the built in functions like velocity, speed, drag etc. I did the same
+things for the bullets, the Large, medium, and small enemy ships, as well as how many enemy ships would be alloud on screen at one
+time etc. Then the keyboard function like left, right, shoot, and accelerate. Added it to the game state. i began to understand why 
+it is important to keep code organized. for example having all the variables above, so
+you can call them into functions. Then the validations etc. I was and still am only used to doing things with very little line
+of code but this gave me i think a taste of the real world and why it is so important to keep everything organized or have an
+actual style of writing code. Alot of the code felt overwhelming because there were so many paremeters and arguments that was needed
+to pass through for validation. Even though the tutorial shows you how to do everything alot of the things it was going over
+did not seem very familiar especially the physics part of the game, i had to research what some of the built in methods did 
+as well as some of the equations so that everything stays in the bounds of the paremeters of the game world so i 
+could actually understand waht everything was doing. Everything was ok.. to understand like the properties of all the variables etc,
+ it was hard to understand the math portion of the code in like the validation what everything was actually doing
+  Especially the parts where you set the rotations and the anchors of the enemyShips with the randoms. Another part that was
+ confusing  was the amount of properties everything had. I thought that when 
+we create the variables you can just call the actually variable through everything because of some of the other tutorials. We called properties of
+preety much everything. for example the firing rate was set at 100, but i had to call that function so that if i fired a certain 
+amount of bullets it didnt shoot more. Then i had to put physics on the bullets so that they fire from a certain part of the
+image itself so it looks like it is shooting from the front of the image. Then how the bullet traveled so that if you shoot
+while the user ship is moving it would keep heading in a certain direction at the exact point of movement from the user controls.
+The life span of bullets, the intervals of bullets. Also even remebering what properties you gave and the names, having
+to keep looking for the properties you created in all this code. The tutorial gave a vivid image of how a game programmer things
+because of the order of the code. For every property there was also validation and physics that followed. Then to bring the game
+to life you pass the variable into function to bring into the game world. Also adding to the codes and functions. For example when
+you die, you would think you just die, but no you die, theres a 5 second interval to pop up again, you pop up in a certain part of the
+dementions, the number indicating how many lives has to go down, being invicible for the 5 second period that you are dead. You
+would think that you would just do this all at once, but i realized for all these things to happen others variables and functions
+have to be created first.   
+All in all i dont want to be a game developer. I understand now why
+math is so important in the world of coding, especially in building games. 
+-->
